@@ -6,4 +6,4 @@ before_install:
   - docker build -t JohnTheCaptain23/docker-course -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true JohnTheCaptain23/docker-course npm run test
+  - docker run -e CI=true johnthecaptain23/docker-course npm run test
