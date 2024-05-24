@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t JohnTheCaptain23/docker-course -f Dockerfile.dev .
+  - docker build -t johnthecaptain23/docker-course -f Dockerfile.dev .
 
 script:
   - docker run -e CI=true johnthecaptain23/docker-course npm run test
